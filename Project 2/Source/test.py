@@ -7,8 +7,8 @@ from xgboost import XGBClassifier
 
 # read command line arguments
 argv_len = len(sys.argv)
-data_path = sys.argv[1] if argv_len > 1 else "train.csv"
-out_model_path = sys.argv[2] if argv_len > 2 else "output.model"
+out_model_path = sys.argv[1] if argv_len > 1 else "output.model"
+data_path = sys.argv[2] if argv_len > 2 else "train.csv"
 
 # read data
 data = np.loadtxt(data_path, dtype=np.uint8, delimiter=',', skiprows=1)
