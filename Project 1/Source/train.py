@@ -9,9 +9,9 @@ from sklearn import metrics
 
 # read command line arguments
 argv_len = len(sys.argv)
-X_path = sys.arg[1] if argv_len > 1 else "X_train.csv"
-Y_path = sys.arg[2] if argv_len > 2 else "Y_train.csv"
-out_model_path = sys.arg[3] if argv_len > 3 else "output.model"
+X_path = sys.argv[1] if argv_len > 1 else "X_train.csv"
+Y_path = sys.argv[2] if argv_len > 2 else "Y_train.csv"
+out_model_path = sys.argv[3] if argv_len > 3 else "output.model"
 
 # read data
 dataX = pd.read_csv(X_path)
