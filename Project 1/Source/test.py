@@ -26,9 +26,9 @@ dataX.drop(index=NaNRows.index, errors='ignore', inplace=True)
 dataY.drop(index=NaNRows.index, errors='ignore', inplace=True)
 
 # delete duplicates
-duplicateRows = dataX[dataX.duplicated(keep='first')]
-dataX.drop(index=duplicateRows.index, errors='ignore', inplace=True)
-dataY.drop(index=duplicateRows.index, errors='ignore', inplace=True)
+# duplicateRows = dataX[dataX.duplicated(keep='first')]
+# dataX.drop(index=duplicateRows.index, errors='ignore', inplace=True)
+# dataY.drop(index=duplicateRows.index, errors='ignore', inplace=True)
 
 # Features Selection
 del dataX['model']
